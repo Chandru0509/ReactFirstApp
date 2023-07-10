@@ -24,11 +24,11 @@ const EditForm=(props)=>
         <br/>
         <br/>
         <label>UserName</label>
-        <input type="text" onChange={handleInputChange} name="name" value={user.username}/>
+        <input type="text" onChange={handleInputChange} name="username" value={user.username}/>
         <br/>
         <br/>
         <button >UpdatetUser</button>
-        <button onClick={props.setEditing(false)}>Cancel</button>
+        <button className="button muted-button" onClick={()=>{props.setEditing(false)}}>Cancel</button>
        </form>
     )
 }

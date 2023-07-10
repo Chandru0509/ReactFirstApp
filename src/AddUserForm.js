@@ -12,7 +12,7 @@ const AddUserForm=(props)=>{
                 event.preventDefault()
                 if(!user.name || !user.username) return;
                 props.addUser(user)
-                setUser(initialFormState)
+                //setUser(initialFormState)
             }
         }>
             <label>NAME</label>
